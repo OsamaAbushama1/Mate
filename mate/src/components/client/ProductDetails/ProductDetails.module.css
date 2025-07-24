@@ -1,0 +1,140 @@
+.productContainer {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.productTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.imageContainer {
+  max-width: 350px;
+  margin: 0 auto 25px;
+}
+
+.productImage {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.productInfo {
+  font-size: 16px;
+  color: #34495e;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.centeredInfo {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.formLabel {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.optionGroup {
+  flex: 1;
+}
+
+.colorCircles {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.colorCircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.colorCircle:hover {
+  transform: scale(1.1);
+}
+
+.colorCircleSelected {
+  border-color: #2c3e50;
+  transform: scale(1.1);
+}
+
+.sizeBoxContainer {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.sizeBox {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.sizeBox:hover {
+  background-color: #e0e0e0;
+}
+
+.sizeBoxSelected {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.quantityInput {
+  width: 80px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.addToCartButton {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.addToCartButton:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.addToCartButton:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}

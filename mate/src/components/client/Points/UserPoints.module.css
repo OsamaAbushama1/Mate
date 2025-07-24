@@ -1,0 +1,145 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin: 2rem 0;
+}
+
+.errorMessage {
+  color: #d9534f;
+  background-color: #fff2f2;
+  border: 1px solid #f8d7da;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.pointsSummary {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.summaryTitle {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.pointsValue {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0.5rem 0;
+}
+
+.pointsInfo {
+  color: #555;
+  font-style: italic;
+}
+
+.couponsSection,
+.orderHistory {
+  margin-bottom: 2rem;
+}
+
+.historyTitle {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  vertical-align: top;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.table thead th {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.mobileOrders {
+  display: none;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  margin: 2rem 0;
+}
+
+.noOrders {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #999;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .pointsSummary {
+    padding: 1.5rem;
+  }
+
+  .pointsValue {
+    font-size: 1.5rem;
+  }
+
+  .table {
+    display: none;
+  }
+
+  .mobileOrders {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .orderCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .orderCard div {
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+}

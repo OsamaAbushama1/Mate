@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+.header {
+  background-color: white;
+  border-bottom: 1px solid #223649;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.headerContainer {
+  position: relative;
+}
+
+.headerLogo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.headerTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 5.25rem;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  letter-spacing: -6px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.headerMenuButton {
+  background: none;
+  border: none;
+}
+
+.headerSidebar {
+  position: fixed;
+  top: 128px;
+  left: -100%;
+  width: 25%;
+  height: calc(100% - 128px);
+  background-color: white;
+  border-right: 1px solid #223649;
+  padding: 2rem 1rem;
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.headerSidebar.open {
+  left: 0;
+}
+
+.sidebarHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+
+.headerNav {
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-left: 15px;
+}
+
+.headerLink {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  color: black;
+}
+
+.headerActions {
+  flex-shrink: 0;
+}
+
+.headerButton {
+  padding: 0.5rem;
+  background: none;
+}
+
+.sidebarOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sidebarOverlay.open {
+  opacity: 1;
+}
+
+.headerSpacer {
+  height: 133px;
+}
+
+
+@media (max-width: 576px) {
+  .headerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .headerLogo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .headerTitle {
+    text-align: center;
+    margin: 25px auto 5px;
+  }
+
+  .headerMenuButton {
+    position: absolute;
+    top: 5px;
+  }
+
+  .headerActions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 1rem;
+  }
+
+  .headerSidebar {
+    width: 70%;
+    max-width: none;
+    top: 0;
+    height: 100%;
+  }
+
+  .headerSpacer {
+    height: 133px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .headerContainer {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .headerTitle {
+    font-size: 3rem;
+  }
+
+  .headerActions {
+    flex-grow: 0;
+  }
+
+  .headerSidebar {
+    width: 100%;
+    top: 100px;
+    height: calc(100% - 100px);
+  }
+
+  .headerSpacer {
+    height: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .headerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}

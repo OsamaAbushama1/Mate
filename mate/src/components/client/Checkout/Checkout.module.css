@@ -1,0 +1,168 @@
+.checkoutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.checkoutTitle {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.emptyCart {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.emptyCart a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.errorMessage {
+  color: #d9534f;
+  background-color: #fff2f2;
+  border: 1px solid #f8d7da;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.checkoutContent {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.orderSummary,
+.shippingForm {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+.summaryTitle,
+.formTitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.total {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.total strong {
+  color: #28a745;
+}
+
+.couponSection {
+  margin: 1rem 0;
+}
+
+.couponInputGroup {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.couponInput {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.applyCouponButton {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.applyCouponButton:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.couponSuccess {
+  color: #28a745;
+  font-size: 0.9rem;
+}
+
+.couponError {
+  color: #d9534f;
+  font-size: 0.9rem;
+}
+
+.formGroup {
+  margin-bottom: 1.2rem;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.placeOrderButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.placeOrderButton:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .checkoutContent {
+    flex-direction: column;
+  }
+
+  .couponInputGroup {
+    flex-direction: column;
+  }
+
+  .applyCouponButton {
+    width: 100%;
+  }
+}

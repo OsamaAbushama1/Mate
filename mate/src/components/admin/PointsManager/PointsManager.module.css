@@ -1,0 +1,165 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.searchContainer {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.errorMessage {
+  color: #d9534f;
+  background-color: #f2dede;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin: 20px 0;
+}
+
+.noUsers {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin: 20px 0;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.pointsInput {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.editButton {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.editButton:hover {
+  background-color: #0056b3 !important;
+}
+
+.saveButton {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+.saveButton:hover {
+  background-color: #218838;
+}
+
+.cancelButton {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cancelButton:hover {
+  background-color: #c82333;
+}
+
+.mobileUsers {
+  display: none;
+}
+
+.userCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userCard div {
+  margin-bottom: 10px;
+}
+
+.cardActions {
+  display: flex;
+  gap: 10px;
+}
+
+.message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin: 50px 0;
+}
+
+@media (max-width: 575px) {
+  .table {
+    display: none;
+  }
+
+  .mobileUsers {
+    display: block;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .searchInput {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
