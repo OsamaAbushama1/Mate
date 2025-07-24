@@ -10,7 +10,6 @@ This repository contains both the **frontend** and **backend** codebases for the
 - [Installation](#installation)
   - [Frontend Setup](#frontend-setup)
   - [Backend Setup](#backend-setup)
-- [Project Structure](#project-structure)
 - [Usage](#usage)
 
 
@@ -63,21 +62,23 @@ This repository contains both the **frontend** and **backend** codebases for the
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/mate.git
-   cd mate/frontend
+   cd mate/mate
 
 
-Install dependencies:npm install
+Install dependencies:
+npm install
 
-oryarn install
+or yarn install
 
 
 Create a .env file in the frontend directory and add environment variables:REACT_APP_API_URL=http://localhost:8000/api
 REACT_APP_BASE_URL=http://localhost:3000
 
 
-Start the development server:npm start
+Start the development server:
+npm start
 
-oryarn start
+or yarn start
 
 
 Access the frontend at http://localhost:3000.
@@ -86,12 +87,6 @@ Backend Setup
 
 Navigate to the backend directory:cd mate/backend
 
-
-Create and activate a virtual environment:python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-
-Install dependencies:pip install -r requirements.txt
 
 
 Create a .env file in the backend directory and add environment variables:SECRET_KEY=your_django_secret_key
@@ -110,38 +105,6 @@ Start the Django development server:python manage.py runserver
 
 The API will be available at http://localhost:8000/api.
 
-Project Structure
-mate/
-├── frontend/
-│   ├── public/
-│   │   ├── index.html
-│   │   └── favicon.ico
-│   ├── src/
-│   │   ├── assets/               # Images, fonts, and other static assets
-│   │   ├── components/           # Reusable React components (e.g., Cart, ProductCard)
-│   │   ├── pages/                # Page components (e.g., Home, Cart, Points, Orders)
-│   │   ├── context/              # Context API providers and hooks (e.g., Auth, Cart)
-│   │   ├── styles/               # Bootstrap and custom CSS
-│   │   ├── App.js                # Main app component with React Router
-│   │   └── index.js              # Entry point
-│   ├── .env                      # Environment variables
-│   └── package.json
-├── backend/
-│   ├── mate/                     # Django project directory
-│   │   ├── settings.py           # Django settings
-│   │   ├── urls.py               # Main URL configurations
-│   │   └── wsgi.py               # WSGI entry point
-│   ├── apps/
-│   │   ├── users/                # User authentication and profile management
-│   │   ├── products/             # Product management (clothing items)
-│   │   ├── orders/               # Order and cart management
-│   │   ├── points/               # Points and coupon system
-│   │   ├── reports/              # Daily and monthly report generation
-│   │   └── api/                  # Django REST Framework API views and serializers
-│   ├── manage.py                 # Django management script
-│   ├── .env                      # Environment variables
-│   └── requirements.txt          # Python dependencies
-└── README.md
 
 Usage
 
@@ -174,25 +137,4 @@ Monitor total points and generate daily/monthly reports.
 
 
 
-
-
-Contributing
-Contributions are welcome! To contribute:
-
-Fork the repository.
-Create a new branch:git checkout -b feature/your-feature-name
-
-
-Make your changes and commit:git commit -m "Add your feature description"
-
-
-Push to your branch:git push origin feature/your-feature-name
-
-
-Open a pull request with a detailed description of your changes.
-
-Please ensure your code follows the project's coding standards and includes appropriate tests.
-License
-This project is licensed under the MIT License.
-
-For any issues or questions, please open an issue on GitHub or contact us at support@mate.com.```
+For any issues or questions, please open an issue on GitHub or contact us at osamaabushama1@gmail.com.```
